@@ -1,0 +1,64 @@
+.quick-picks-panel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+
+.quick-job-card {
+  flex: 1 1 240px;
+  max-width: 260px;
+  background-color: #fdfdfd;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-left: 4px solid #2a9f7c;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.quick-job-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.quick-job-card h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+  color: #264653;
+}
+
+.quick-job-card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.75rem;
+}
+
+.empty-message {
+  font-style: italic;
+  color: #888;
+  padding: 1rem 0;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.view-all-wrapper {
+  width: 100%;
+  margin-top: 1rem;
+  text-align: right;
+}
+
+.view-all-btn {
+  background: none;
+  border: none;
+  color: #2a9f7c;
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-decoration: underline;
+}

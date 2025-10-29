@@ -1,0 +1,240 @@
+/* Main Panel */
+.user-profile-panel {
+  max-width: 680px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f1f5f0e8;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Heading */
+.user-profile-panel h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #065f46;
+  margin-bottom: 1.5rem;
+}
+
+/* Profile Card */
+.profile-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.profile-header {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: contain;
+  background-color: #e5e7eb;
+  border: 2px solid #10b981;
+  padding: 4px;
+}
+
+.profile-details p {
+  font-size: 0.95rem;
+  margin: 0.5rem 0;
+  color: #1f2937;
+}
+
+.profile-details strong {
+  color: #6b7280;
+  min-width: 80px;
+  display: inline-block;
+}
+
+/* Form Card */
+.profile-form-card {
+  background-color: #ffffff;
+  border: 1px solid #d1fae5;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.profile-form-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #065f46;
+  margin-bottom: 0.5rem;
+}
+
+/* Individual Field Block */
+.profile-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.profile-field label {
+  font-weight: 600;
+  color: #065f46;
+}
+
+.profile-field span {
+  color: #1f2937;
+  font-size: 0.95rem;
+}
+
+.profile-field input {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #a7f3d0;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  margin: 5px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.profile-field input:focus {
+  border-color: #10b981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+  outline: none;
+}
+
+/* Buttons */
+.profile-field button {
+  background-color: #10b981;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  width: fit-content;
+  margin: 5px;
+  box-shadow: 0 2px 6px rgba(16, 185, 129, 0.3);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.profile-field button:hover {
+  background-color: #059669;
+  transform: translateY(-1px);
+}
+
+/* Error Message */
+.error-message {
+  color: #ef4444;
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+}
+
+/* Muted Text */
+.muted {
+  color: #6b7280;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.experience-entry {
+  background-color: #f9fafb;
+  border: 1px solid #d1fae5;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  ;
+}
+
+.add-exp-btn {
+  background-color: #10b981;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(16, 185, 129, 0.3);
+}
+
+.experience-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+}
+
+.experience-actions button {
+  background-color: #10b981;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(16, 185, 129, 0.3);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.experience-actions button:hover {
+  background-color: #059669;
+  transform: translateY(-1px);
+}
+
+.experience-inline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon-actions {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.icon {
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.edit-icon:hover {
+  color: #059669;
+  transform: scale(1.1);
+}
+
+.delete-icon:hover {
+  color: #dc2626;
+  transform: scale(1.1);
+}
+
+.field-inline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .user-profile-panel {
+    padding: 1.5rem;
+  }
+
+  .profile-header {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .profile-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .profile-field button {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+}

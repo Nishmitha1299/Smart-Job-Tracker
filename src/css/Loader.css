@@ -1,0 +1,17 @@
+.circular-loader {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-items: center;
+  border: 5px solid #e0e0e0;
+  border-top: 5px solid #007bff; /* Accent color */
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

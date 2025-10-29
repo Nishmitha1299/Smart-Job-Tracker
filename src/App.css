@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
+
+/* For Complete Website */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.container{
+  max-width: 1300px;
+  margin: auto;
+  padding: 10px;
+  /* border: 1px solid #ccc; */
+  overflow: hidden;
+}
+
+/* For Subheading */
+.para-text{
+  font-family: 'Poppins', sans-serif;
+}
+
+.para-colour{
+  color: rgba(75, 73, 73, 0.6);
+}
+
+/* Navbar */
+
+nav{
+  display: flex;
+  padding: 10px;
+  justify-items: flex-start;
+  width: 100%;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.logo{
+  height: 2rem;
+}
+
+.nav-items{
+  display: flex;
+  gap: 3rem;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: 20px;
+  
+}
+
+.signup-btn{
+  border-radius: 10px;
+  width: 8rem;
+  height: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #040d42;
+  color: white;
+  margin-top: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+
+}
+
+.signup-btn:hover{
+  background-color: #293a9a;
+    transition: 0.3s;
+}
+
+/* Main Body */
+.main{
+  display: flex;
+  margin-top: 50px;
+}
+
+.main-text{
+ flex-grow: 2;
+ line-height: 1.5rem;
+ margin-left: 10px;
+}
+
+.main-image{
+  width:500px;
+  height: 400px;
+  flex-grow: 2;
+ margin-right: 15px;
+}
+
+.main-buttons{
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.main-btn-design{
+  width: 12rem;
+  height: 3rem;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  border-style: none;
+  font-size: 1rem;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.jobSeeker{
+  background-color: #2a9f7c;
+}
+
+.jobSeeker:hover{
+  background-color: #40bfa6;
+    transition: 0.3s;
+}
+
+.recruiter{
+  background-color: #040d42;
+}
+
+.recruiter:hover{
+  background-color: #293a9a;
+    transition: 0.3s;
+}
+
+
+
+/* Service Designing */
+
+.service-details{
+  margin-top: 50px;
+  text-align: center;
+  background-color: rgb(230, 245, 242);
+  height: fit-content;
+  padding: 20px;
+  margin-bottom: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service-heading{
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+.service-cards{
+  display: flex;
+  margin-top: 30px;
+  /* height: 200px; */
+  gap: 3rem;
+  justify-content: space-evenly;
+}
+
+.card{
+  background-color: #f2f7f7c0;
+  border-radius: 15px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  text-align: center;
+  width: 250px;
+}
+
+.service-image{
+  width: 50px;
+  height: 50px;
+}
+
+
+/* Footer.css */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #2a9f7c;
+  font-size: 0.9rem;
+  border-top: 1px solid #ddd;
+  color: white;
+  max-height: 150px;
+}
+
+.footer-left, .footer-right {
+  margin: 25px;
+}
+
+.footer a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: white
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-left h3 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.footer-right{
+  margin: 0;
+  line-height: 20px;
+  margin-right: 25px;
+}
+
+.footer-right a{
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.links {
+  text-decoration: none;
+  color: black;
+  margin-top: 10px;
+  margin-right: 20px;
+  padding: 5px;
+}
+
+.links:hover {
+  color: #2a9f7c;
+  transition: 0.3s;
+}
+
+/* Website Responsiveness */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}

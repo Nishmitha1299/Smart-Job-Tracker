@@ -1,0 +1,220 @@
+.manage-applications-panel {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', 'Inter', sans-serif;
+}
+
+.manage-applications-panel h2{
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #142339;
+  margin-bottom: 0.5rem;
+}
+
+.application-card {
+  background-color: #ffffff;
+  border: 1px solid #d1fae5;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.application-card strong {
+  font-weight: 600;
+  color: #374151;
+  font-size: 0.95rem;
+}
+
+.application-card p {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.candidate-info p {
+  margin: 0.4rem 0;
+  font-size: 0.95rem;
+  color: #1f2937;
+}
+
+.work-experience-block {
+  margin-top: 0.6rem;
+}
+
+.work-experience-block ul {
+  padding-left: 1rem;
+  margin: 0.7rem 0;
+}
+
+.work-experience-block li {
+  font-size: 0.9rem;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.status-control {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.status-control label {
+  font-weight: 500;
+  color: #065f46;
+  font-size: 0.9rem;
+}
+
+.status-select {
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #a7f3d0;
+  font-size: 0.9rem;
+  background-color: #f0fdf4;
+  color: #065f46;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.status-select:focus {
+  border-color: #10b981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+  outline: none;
+}
+
+
+.status-save-btn {
+  background-color: #10b981;
+  color: white;
+  border: none;
+  padding: 0.45rem 0.9rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  box-shadow: 0 2px 6px rgba(16, 185, 129, 0.3);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.status-save-btn:hover {
+  background-color: #059669;
+  transform: translateY(-1px);
+}
+
+
+.skill-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 1.5rem;
+
+}
+
+.pill {
+  background-color: #e0f2f1;
+  color: #065f46;
+  padding: 0.3rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+}
+
+.status-preview {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.6rem;
+}
+
+.status-badge {
+  padding: 0.3rem 0.7rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-note {
+  font-size: 0.8rem;
+  color: #1f2937;
+  font-weight: bold;
+}
+
+/* Status-specific colors */
+.status-badge.under-review {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.status-badge.shortlisted {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.status-badge.rejected {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.status-badge.interview-scheduled {
+  background-color: #dbeafe;
+  color: #1e3a8a;
+}
+
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  margin-top: 3rem;
+}
+
+.filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.filter-bar label {
+  font-size: 0.9rem;
+  color: #065f46;
+}
+
+.filter-bar select {
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 0.9rem;
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+.tagline {
+  font-size: 0.95rem;
+  text-align: center;
+  color: #6b7280;
+}
+
+.no-applications {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1rem;
+  color: #6b7280;
+  background-color: #f9fafb;
+  border-radius: 12px;
+  border: 1px dashed #d1d5db;
+  margin-top: 2rem;
+}
+
+.loader-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh; /* Adjust based on your layout */
+}
